@@ -9,187 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    :root {
-      --primary: #6366f1;
-      --secondary: #0ea5e9;
-      --dark: #333333;
-      --gray: #666666;
-      --border-radius: 12px;
-    }
-    * {
-      font-family: 'Share tech';
-    }
-    /* Resume Section */
-    .resume {
-      background-color: #f9fafb;
-    }
 
-    .resume-box {
-      background: #fff;
-      border-radius: var(--border-radius);
-      padding: 40px 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      height: 100%;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    .resume-box::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
-      transition: all 0.5s ease;
-      z-index: -1;
-    }
-
-    .resume-box:hover::before {
-      height: 100%;
-    }
-
-    .resume-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      border-color: var(--primary);
-    }
-
-    .resume-icon {
-      width: 60px;
-      height: 60px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 20px;
-      color: #fff;
-      font-size: 24px;
-      transition: all 0.3s ease;
-    }
-
-    .resume-box:hover .resume-icon {
-      transform: rotateY(360deg);
-    }
-
-    .resume-box h4 {
-      font-size: 1.25rem;
-      margin-bottom: 10px;
-      color: var(--dark);
-      font-weight: bold;
-    }
-
-    .date-badge {
-      display: inline-block;
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
-      color: var(--primary);
-      font-size: 0.875rem;
-      padding: 5px 15px;
-      border-radius: 50px;
-      margin-bottom: 10px;
-      border: 1px solid rgba(99, 102, 241, 0.2);
-    }
-
-    .institution {
-      font-weight: 500;
-      margin-bottom: 8px;
-      color: var(--dark);
-    }
-
-    .resume-box p {
-      color: var(--gray);
-      margin-bottom: 0;
-    }
-    /* Services Section */
-    .services {
-      background-color: #fff;
-    }
-
-    .service-box {
-      background: #fff;
-      border-radius: var(--border-radius);
-      padding: 40px 30px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      height: 100%;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    .service-box::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
-      transition: all 0.5s ease;
-      z-index: -1;
-    }
-
-    .service-box:hover::before {
-      height: 100%;
-    }
-
-    .service-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      border-color: var(--primary);
-    }
-
-    .service-icon {
-      width: 70px;
-      height: 70px;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 25px;
-      color: #fff;
-      font-size: 28px;
-      transition: all 0.3s ease;
-    }
-
-    .service-box:hover .service-icon {
-      transform: rotateY(360deg);
-    }
-
-    .service-box h4 {
-      font-size: 1.25rem;
-      margin-bottom: 15px;
-      color: var(--dark);
-    }
-
-    .service-box p {
-      color: var(--gray);
-      margin-bottom: 0;
-    }
-  </style>
   <body class="bg-gray-50 text-gray-700">
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full bg-white shadow-sm z-40 py-4">
       <div class="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" class="text-xl font-bold flex items-center">
           <span class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-2">S</span>
-          Septian
+          eptian | Portofolio
         </a>
         <div class="hidden md:flex space-x-6">
           <a href="#home" class="hover:text-blue-500">Home</a>
           <a href="#about" class="hover:text-blue-500">About</a>
           <a href="#resume" class="hover:text-blue-500">Resume</a>
-          <a href="#projects" class="hover:text-blue-500">Projects</a>
           <a href="#services" class="hover:text-blue-500">Services</a>
+          <a href="#projects" class="hover:text-blue-500">Projects</a>
           <a href="#contact" class="hover:text-blue-500">Contact</a>
         </div>
         <button id="mobile-menu-button" class="md:hidden text-blue-500">
@@ -206,8 +42,8 @@
       <a href="#home" class="text-xl font-bold hover:text-blue-500">Home</a>
       <a href="#about" class="text-xl font-bold hover:text-blue-500">About</a>
       <a href="#resume" class="text-xl font-bold hover:text-blue-500">Resume</a>
-      <a href="#projects" class="text-xl font-bold hover:text-blue-500">Projects</a>
       <a href="#services" class="text-xl font-bold hover:text-blue-500">Services</a>
+      <a href="#projects" class="text-xl font-bold hover:text-blue-500">Projects</a>
       <a href="#contact" class="text-xl font-bold hover:text-blue-500">Contact</a>
     </div>
 
@@ -216,7 +52,7 @@
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-10 md:mb-0">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-blue-500">Septian</span></h1>
+            <h1 class="text-2xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-blue-500">Septian Jordan Purba</span></h1>
             <div class="text-2xl font-medium mb-6"><span id="typed-text" class="text-blue-500"></span><span class="typed-cursor">|</span></div>
             <p class="text-lg mb-8">Passionate about building complete, scalable web applications that combine beautiful front-end design with robust and efficient back-end functionality to deliver exceptional user experiences.</p>
 
@@ -228,7 +64,7 @@
           <div class="md:w-1/2 flex justify-center">
             <div class="relative">
               <div class="w-64 h-64 bg-blue-500 rounded-full absolute -z-10 top-4 left-4 opacity-20"></div>
-              <img src="/api/placeholder/400/400" alt="Septian Jordan Purba" class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg" />
+              <img src="/image/photo.webp" loading="lazy" alt="Septian Jordan Purba" class="w-64 h-64 object-cover rounded-full border-4 border-white shadow-lg" />
             </div>
           </div>
         </div>
@@ -245,7 +81,7 @@
 
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
-            <img src="/api/placeholder/300/300" alt="Septian Jordan Purba" class="w-64 h-64 object-cover rounded-xl shadow-lg" />
+            <img src="/image/photo2.webp" loading="lazy" alt="Septian Jordan Purba" class="w-64 h-64 object-cover rounded-xl shadow-lg" />
           </div>
 
           <div class="md:w-2/3 md:pl-12">
@@ -289,6 +125,7 @@
     </section>
 
     <!-- Resume Section -->
+    <!-- Resume Section -->
     <section id="resume" class="resume py-16 bg-gray-50">
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
@@ -303,23 +140,17 @@
             <div class="space-y-6">
               <div class="resume-box">
                 <div class="flex items-start">
-                  <div class="resume-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                  </div>
                   <div>
                     <h4>Higher Education</h4>
                     <span class="date-badge">2022 - Present</span>
                     <p class="institution">STMIK PELITA NUSANTARA</p>
-                    <p>Taking a major in Information Technology.</p>
+                    <p>Taking a major in Computer Science.</p>
                   </div>
                 </div>
               </div>
 
               <div class="resume-box">
                 <div class="flex items-start">
-                  <div class="resume-icon">
-                    <i class="fas fa-school"></i>
-                  </div>
                   <div>
                     <h4>Senior High School</h4>
                     <span class="date-badge">2019 - 2022</span>
@@ -335,9 +166,6 @@
             <div class="space-y-6">
               <div class="resume-box">
                 <div class="flex items-start">
-                  <div class="resume-icon" style="width: 60; height: 60">
-                    <i class="fas fa-laptop-code"></i>
-                  </div>
                   <div>
                     <h4>Fullstack Web Developer</h4>
                     <span class="date-badge">2023 - Present</span>
@@ -351,6 +179,7 @@
         </div>
       </div>
     </section>
+
     <!-- Services Section -->
     <section id="services" class="services py-16">
       <div class="container mx-auto px-6">
@@ -399,9 +228,34 @@
           <!-- Project 1 -->
           <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
             <div class="h-48 bg-gray-200 relative">
-              <img src="/api/placeholder/600/400" alt="Project 1" class="w-full h-full object-cover" />
+              <img src="/image/project/project1.webp" alt="Project 1" class="w-full h-full object-cover" />
               <div class="absolute inset-0 bg-blue-500 bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                <a href="https://bempenusa.cloud" class="bg-white text-blue-500 p-2 rounded-full mx-1">
+                  <i class="fas fa-link"></i>
+                </a>
                 <a href="#" class="bg-white text-blue-500 p-2 rounded-full mx-1">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Financial Management System</h3>
+              <p class="text-gray-600 mb-4">A responsive financial management system built using Bootstrap for the user interface, Flask as the backend framework, and MongoDB as the database solution.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">Bootstrap</span>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">JavaScript</span>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">Flask</span>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+            <div class="h-48 bg-gray-200 relative">
+              <img src="/image/project/project2.webp" alt="Project 2" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-blue-500 bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                <a href="https://figocell.glitch.me" class="bg-white text-blue-500 p-2 rounded-full mx-1">
                   <i class="fas fa-link"></i>
                 </a>
                 <a href="#" class="bg-white text-blue-500 p-2 rounded-full mx-1">
@@ -411,35 +265,12 @@
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold mb-2">E-Commerce Website</h3>
-              <p class="text-gray-600 mb-4">A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
+              <p class="text-gray-600 mb-4">A team-built e-commerce website with a clean and responsive layout, developed using Bootstrap for styling, jQuery for interactivity, Flask as the backend, and MongoDB for the database.</p>
               <div class="flex flex-wrap gap-2">
-                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">HTML</span>
-                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">CSS</span>
-                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
-            <div class="h-48 bg-gray-200 relative">
-              <img src="/api/placeholder/600/400" alt="Project 2" class="w-full h-full object-cover" />
-              <div class="absolute inset-0 bg-blue-500 bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                <a href="#" class="bg-white text-blue-500 p-2 rounded-full mx-1">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a href="#" class="bg-white text-blue-500 p-2 rounded-full mx-1">
-                  <i class="fas fa-search"></i>
-                </a>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Personal Blog</h3>
-              <p class="text-gray-600 mb-4">A personal blog with a clean, minimal design and responsive layout.</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">HTML</span>
                 <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">Bootstrap</span>
-                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">JavaScript</span>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">jQuery</span>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">Flask</span>
+                <span class="text-xs bg-blue-100 text-blue-500 px-2 py-1 rounded-full">MongoDB</span>
               </div>
             </div>
           </div>
@@ -564,81 +395,11 @@
         <div class="text-center">
           <h3 class="text-2xl font-bold mb-4">Septian Jordan Purba</h3>
           <p class="text-gray-400 mb-6">"No need to compare yourself to others, strive to be better than yesterday."</p>
-          <p class="text-gray-500 text-sm">&copy; <span id="year"></span> Developed by Septian</p>
+          <p class="text-gray-500 text-sm">&copy; <span id="year"></span> Developed with <span style="color: red">❤</span> by Septian</p>
         </div>
       </div>
     </footer>
 
-    <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const closeMenu = document.getElementById('close-menu');
-
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.remove('hidden');
-      });
-
-      closeMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-      });
-
-      // Typing animation
-      const typedText = document.getElementById('typed-text');
-      const professions = ['Fullstack Web Developer', 'Tech Enthusiast'];
-      let currentProfession = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-      let typingSpeed = 100;
-
-      function type() {
-        const currentText = professions[currentProfession];
-
-        if (isDeleting) {
-          typedText.textContent = currentText.substring(0, charIndex - 1);
-          charIndex--;
-          typingSpeed = 50;
-        } else {
-          typedText.textContent = currentText.substring(0, charIndex + 1);
-          charIndex++;
-          typingSpeed = 100;
-        }
-
-        if (!isDeleting && charIndex === currentText.length) {
-          isDeleting = true;
-          typingSpeed = 1000;
-        } else if (isDeleting && charIndex === 0) {
-          isDeleting = false;
-          currentProfession = (currentProfession + 1) % professions.length;
-          typingSpeed = 500;
-        }
-
-        setTimeout(type, typingSpeed);
-      }
-
-      // Start typing animation
-      setTimeout(type, 1000);
-
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth',
-          });
-
-          // Close mobile menu if open
-          mobileMenu.classList.add('hidden');
-        });
-      });
-
-      // Update year in footer
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
